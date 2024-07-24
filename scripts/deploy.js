@@ -4,15 +4,15 @@ async function main() {
   const Upload = await hre.ethers.getContractFactory("Upload");
   const upload = await Upload.deploy();
   
-//     await upload.deployed();
+    await upload.deployed();
   
-//     console.log("Library deployed to:", upload.address);
-//   }
-  
-    await upload.waitForDeployment();
-  
-    console.log("Contract deployed to:", upload.target);
+    console.log("Library deployed to:", upload.address);
   }
+  
+  //   await upload.waitForDeployment();
+  
+  //   console.log("Contract deployed to:", upload.target);
+  // }
   
 main().catch((error) => {
   console.error(error);
